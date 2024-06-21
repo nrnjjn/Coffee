@@ -56,9 +56,11 @@ const Viewbooking = () => {
           <thead className="text-xs text-white uppercase dark:bg-gray-950/90 dark:text-gray-400">
             <tr>
               <th scope="col" className="px-3 py-3">SLNO</th>
+              <th>Name</th>
               <th>Product</th>
               <th>Quantity</th>
               <th>Amount</th>
+              <th>Date</th>
               <th>STATUS</th>
               <th></th>
               <th></th>
@@ -68,9 +70,11 @@ const Viewbooking = () => {
             {filteredData.map((item, index) => (
               <tr key={index} className="dark:border-gray-700 text-white bg-gray-950-950/40 hover:bg-slate-800/50">
                 <td scope="row" className="px-1 py-4">{index + 1}</td>
+                <td>{item.user?.Name}</td>
                 <td>{item.product?.Pname}</td>
                 <td>{item.req?.Quantity}</td>
                 <td>{item.req?.totalAmount}</td>
+                <td>{new Date(item.req?.Date).toLocaleDateString()}</td>
                 <td>{item.req?.Status}</td>
                 <td><button onClick={() => handlesubmit('Accepted', item.req._id)} className='text-green-500'>Accept</button></td>
                 <td><button onClick={() => handlesubmit('Rejected', item.req._id)} className='text-red-500'>Reject</button></td>
