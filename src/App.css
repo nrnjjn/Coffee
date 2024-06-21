@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+
+.reg{
+  background-image: url('./Images/reg.jpg');
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: auto;
+}
+
+
+.landing{
+  background-image: url('./Images/l1.jpg');
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: auto;
+}
