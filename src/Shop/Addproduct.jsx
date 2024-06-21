@@ -35,7 +35,7 @@ const Addproduct = () => {
     toast.success('New product added')
     let response=await axios.post(`http://localhost:4000/shop/addproduct`,formData,{
       headers: {
-        'Content-Type': 'multipart/form-data'  // Set the content type for FormData
+        'Content-Type': 'multipart/form-data' 
       }})
        console.log(response);
   }

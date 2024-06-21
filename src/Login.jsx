@@ -33,9 +33,7 @@ const Login = () => {
             navigate('/shopnav')
           }
         }
-        // else{
-        //   alert('Invalid Credentials')
-        // }
+        
       }
   
   return (

@@ -26,7 +26,7 @@ const Viewbooking = () => {
     try {
       const response = await axios.put(`http://localhost:4000/shop/managebooking/${reqId}`, { Status: status });
       console.log('Update response:', response.data);
-      // Toggle refresh to trigger useEffect to fetch updated data
+     
       setRefresh(!refresh);
     } catch (error) {
       console.error('Error updating status:', error);

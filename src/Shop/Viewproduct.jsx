@@ -10,7 +10,7 @@ const Viewproduct = () => {
   const handleDelete = async (productId) => {
     try {
       await axios.delete(`http://localhost:4000/shop/deleteproduct/${productId}`);
-      fetchData(); // Fetch data again after deletion
+      fetchData(); 
     } catch (error) {
       console.error('Error deleting product:', error);
     }

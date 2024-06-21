@@ -16,8 +16,8 @@ const Userprodd = () => {
         const response = await axios.get(`http://localhost:4000/user/viewprodd/${id}`);
         if (response.data) {
           setData(response.data);
-          setShopId(response.data.shopId); // Assuming response.data contains shopId
-          setQuantity(1); // Initialize quantity to 1
+          setShopId(response.data.shopId); 
+          setQuantity(1); 
         }
       } catch (error) {
         console.error('Error fetching product data:', error);
@@ -39,8 +39,8 @@ const Userprodd = () => {
         userId: id2,
         productId: id,
         shopId: shopId,
-        Quantity: quantity, // Include quantity in the booking request
-        totalAmount: totalAmount // Include totalAmount in the booking request
+        Quantity: quantity, 
+        totalAmount: totalAmount 
       });
       console.log(response);
     } catch (error) {
